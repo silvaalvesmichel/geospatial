@@ -4,6 +4,7 @@ Esta é uma API REST desenvolvida para o gerenciamento de pessoas, com funcional
 
 ## 🚀 Tecnologias e Arquitetura 
 * **Java 17 & Spring Boot 3**
+* **Maven 3.3.1**
 * **Spring Data JPA**: Para persistência de dados.
 * **PostgreSQL**: Banco de dados principal utilizado em produção.
 * **H2 Database**: Utilizado para execução de testes automatizados e memoria.
@@ -16,6 +17,11 @@ Esta é uma API REST desenvolvida para o gerenciamento de pessoas, com funcional
 ## ⚙️ Modos de Execução (Arquitetura Hexagonal)
 
 A aplicação foi projetada utilizando **Portas e Adaptadores (Hexagonal/DDD)**. Isso permite trocar a persistência sem alterar nenhuma regra de negócio.
+
+### Baixar as dependências
+```bash
+  mvn clean install
+```
 
 ### 1. Modo Padrão (In-Memory) - **Recomendado para Avaliação**
 Atende estritamente aos requisitos do desafio (Mapa em memória, sem dependência externa).
